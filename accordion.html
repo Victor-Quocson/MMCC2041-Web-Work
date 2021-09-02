@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>accordion example</title>
+    <link rel="stylesheet" href="accordian-styles.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script>
+        $(document).ready(function() { //do not delete this line
+
+            $('h3').click(function() {
+                if ($(this).next().is(':hidden')) {
+                    $('.hiddenContent').stop().slideUp();
+                    $(this).next().stop().slideDown();
+                } else {
+                    $('.hiddenContent').stop().slideUp();
+                }
+            });
+
+        }); //do not delete this line
+    </script>
+</head>
+
+<body>
+    <h1>Week 5</h1>
+    <h2>jQuery Accordions</h2>
+    <h3>Heading 1</h3>
+    <p class="hiddenContent">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut mattis mi a nulla eleifend vitae sagittis libero imperdiet. Vivamus consequat risus sit amet tortor laoreet vitae mattis enim ornare. Suspendisse rhoncus sagittis urna quis sodales. Quisque
+        pharetra arcu eu ipsum iaculis ac auctor ante posuere. Integer urna dui, tristique eu consequat id, fermentum ac arcu. Integer cursus metus sit amet erat tempus eu pulvinar justo congue. Sed vitae mi id purus auctor pulvinar. Phasellus non mauris
+        at ipsum bibendum rutrum vitae quis purus. Proin elit leo, varius ac lacinia eu, ultricies vitae ipsum. Curabitur lacinia vehicula scelerisque. Integer blandit, turpis a ullamcorper accumsan, sem tellus blandit turpis, in fermentum nunc nisl sit
+        amet sapien. Curabitur non enim at est pulvinar tincidunt. Vivamus a erat non dolor tempor placerat. Duis euismod justo et sapien consequat ultrices. Donec lorem lacus, consequat vitae semper sed, tempor in massa. Sed nec lectus accumsan diam
+        luctus faucibus. Duis eros mi, ullamcorper sed viverra a, varius nec lectus. Mauris dapibus purus sit amet nulla adipiscing tempus facilisis odio bibendum. Vivamus aliquet orci quis libero rutrum nec interdum augue feugiat.</p>
+
+    <h3>Heading 2</h3>
+    <p class="hiddenContent">Donec ante risus, iaculis sed faucibus a, interdum sit amet sem. Pellentesque eleifend, lorem a elementum dapibus, dui lectus lacinia est, et mollis neque quam sit amet justo. Nunc fermentum semper ligula bibendum faucibus. Vivamus volutpat convallis
+        dui, quis porttitor ligula luctus ut. Nulla sapien turpis, molestie id rutrum congue, hendrerit eu libero. Donec vitae dui metus, at pellentesque elit. Morbi posuere molestie eros at accumsan. In vitae odio purus. Nunc egestas nisi sit amet enim
+        semper pellentesque. Donec ornare pharetra enim, sed rhoncus lectus euismod quis. Donec laoreet, sapien at tincidunt sollicitudin, arcu neque mollis turpis, nec gravida massa turpis a felis. Integer nisi enim, blandit nec euismod vel, cursus at
+        nulla. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
+
+    <h3>Heading 3</h3>
+    <p class="hiddenContent">Phasellus ac lacus nibh. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Cras mattis pharetra nunc sit amet pharetra. Ut ullamcorper pellentesque tincidunt. Sed odio sem, volutpat ut varius ut, ullamcorper
+        at nibh. Suspendisse tincidunt elit magna. Donec vehicula mattis viverra. In hac habitasse platea dictumst. Donec lobortis vehicula tristique. Proin adipiscing, nunc non feugiat cursus, purus sem lobortis quam, pulvinar bibendum nisl nisi vel
+        augue. Pellentesque non tellus dui. Nulla tempus tortor ac orci mollis vestibulum bibendum massa scelerisque. Cras cursus vulputate dignissim.</p>
+
+    <h3>Heading 4</h3>
+    <p class="hiddenContent">Proin sit amet mauris felis, sit amet condimentum justo. Ut tempus hendrerit massa, quis tempus risus dictum sit amet. Quisque ac augue dui. Morbi elit arcu, luctus ut interdum id, pulvinar et odio. Curabitur accumsan augue vitae dolor vestibulum
+        eget faucibus dolor consequat. Maecenas dapibus orci eu diam ultricies vulputate. Phasellus condimentum facilisis auctor. Donec ac metus adipiscing erat rhoncus gravida. Fusce lectus sem, condimentum eget vestibulum sit amet, hendrerit et eros.
+        Curabitur velit justo, dictum non vestibulum a, semper in nunc. Proin vitae arcu urna, sed varius purus. Suspendisse viverra est in magna accumsan ut dapibus enim lacinia. Pellentesque hendrerit dapibus feugiat.</p>
+
+    <h3>Heading 5</h3>
+    <p class="hiddenContent">Aenean malesuada eleifend molestie. Nulla at augue quis magna iaculis volutpat ac ac tellus. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Nam facilisis, velit non laoreet cursus, urna velit pharetra justo,
+        nec egestas diam ligula vel massa. Suspendisse tempor tempus porta. Sed convallis nulla at mi mollis a faucibus dolor lobortis. Suspendisse at erat in dolor mattis rhoncus. Praesent quis nulla eleifend orci tincidunt condimentum. Etiam et pharetra
+        ligula. Nulla blandit elementum justo in sagittis. Duis id est lorem. Ut aliquet pretium luctus. Nam varius, arcu quis gravida feugiat, odio magna dignissim arcu, non varius turpis magna sit amet magna. In mattis tristique lorem non malesuada.</p>
+
+    <h3>Heading 6</h3>
+    <p class="hiddenContent">Nunc libero metus, adipiscing sit amet faucibus a, tristique eu ipsum. Praesent fringilla euismod sapien in facilisis. Mauris et erat a justo malesuada pulvinar. Curabitur urna orci, ornare ac gravida ut, commodo in metus. Phasellus tristique quam
+        sit amet dolor sodales laoreet. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In molestie, dui sit amet posuere lobortis, lectus leo tempor felis, ac feugiat neque nisi vitae lorem. Phasellus eget augue
+        ac arcu tincidunt mattis sit amet ac turpis. Pellentesque congue risus a ipsum dapibus sed interdum ligula tincidunt. Sed in lectus diam. Nunc vehicula pulvinar risus, nec semper arcu volutpat id. Aliquam scelerisque, felis in rhoncus accumsan,
+        mauris dui condimentum justo, ut vestibulum nulla ante ut odio. Praesent in lacus ac risus tempor commodo sit amet nec purus. Maecenas in orci vitae neque scelerisque auctor et sed dui. Vivamus cursus justo ut urna fermentum interdum. Praesent
+        sit amet mi neque. Maecenas eget lacus sapien, gravida rhoncus nisi.</p>
+
+</body>
+
+</html>
